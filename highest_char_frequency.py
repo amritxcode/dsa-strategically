@@ -1,6 +1,6 @@
-def highest_frequency(arr):
+def highest_frequency(s):
     freq = {}
-    for i in arr:
+    for i in s:
         freq[i] = freq.get(i, 0) + 1
 
     max_freq = 0
