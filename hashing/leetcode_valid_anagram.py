@@ -1,6 +1,8 @@
 def is_anagram(s, t):
     freq = {}
-
+    if len(s) != len(t):
+        return False
+    
     for i in s:
         freq[i] = freq.get(i, 0) + 1
 
